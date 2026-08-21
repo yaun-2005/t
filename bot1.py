@@ -230,11 +230,11 @@ def main_buttons():
             url=f"https://t.me/{BOT_USERNAME}?startgroup=s&delete_message+manage_video_chats_message+invite_users")
           )
     kb.row(    
-         InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="t.me/LeyoxYan_Yan"),
+         InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="http://t.me/KYAW_SWAR5"),
          InlineKeyboardButton(" စကားပြော ", url="https://t.me/+CF-kTfbq6MhmZGM1")
           )
     kb.row(  
-        InlineKeyboardButton("Botပြုလုပ်လိုပါက", url="tg://resolve?domain=LeyoxYan_Yan&text=Botအသစ်လုပ်ချင်လို့ပါ"),
+        InlineKeyboardButton("Botပြုလုပ်လိုပါက", url="tg://resolve?domain=KYAW_SWAR5&text=Botအသစ်လုပ်ချင်လို့ပါ"),
         InlineKeyboardButton("UPDATE", url="https://t.me/MusicUpate")
           )
     return kb
