@@ -226,7 +226,7 @@ def main_buttons():
     kb = InlineKeyboardMarkup()
     kb.add(
          InlineKeyboardButton(
-            "➕Add To Your Group ထည့်သွင်းရန်",
+            "➕Add To Your Group ထည့်သွင်းရန်", style=ButtonStyle.DANGER),
             url=f"https://t.me/NoLoveReplay_bot?startgroup=s&delete_message+manage_video_chats_message+invite_users")
           )
     kb.row(    
