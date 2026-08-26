@@ -227,7 +227,7 @@ def main_buttons():
     kb.add(
          InlineKeyboardButton(
             "➕Add To Your Group ထည့်သွင်းရန်",
-            url=f"https://t.me/NoLoveReplay_bot?startgroup=s&delete_message+manage_video_chats_message+invite_users")
+            url=f"https://t.me/PokeiLayBot?startgroup=s&delete_message+manage_video_chats_message+invite_users")
           )
     kb.row(    
          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="http://t.me/LeyoxYan_Yan"),
@@ -715,7 +715,7 @@ def start(message):
     # ၃။ Join ထားပြီးသူများအတွက် ပြသမည့် စာသား
     bot.send_message(
         message.chat.id, 
-        "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>𝙼𝚢𝚊𝚗𝚖𝚊𝚛 𝙵𝚛𝚒𝚎𝚗𝚍 Bot Online!</b>\n\n"
+        "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>မင်းတို့ကြမ်းတာထုပ်ထားတယ်𝐏ᴏᴡᴇʀ 𝐁ʏ✿︎ -  @LeyoxYan_Yan!</b>\n\n"
         "<tg-emoji emoji-id='5240241223632954241'>🚫</tg-emoji> Bio / Join / Link spam auto delete\n"
         "<tg-emoji emoji-id='6271786398404055377'>⚠️</tg-emoji> 3 Warnings = Auto Mute\n\n"
         "<tg-emoji emoji-id='5226945370684140473'>➕</tg-emoji> Bot ကို Group ထဲထည့်ပြီး Admin ပေးထားပါ။<tg-emoji emoji-id='5226945370684140473'>➕</tg-emoji> ",
