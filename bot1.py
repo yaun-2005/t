@@ -715,7 +715,7 @@ def start(message):
     # ၃။ Join ထားပြီးသူများအတွက် ပြသမည့် စာသား
     bot.send_message(
         message.chat.id, 
-        "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>မင်းတို့ကြမ်းတာထုပ်ထားတယ်𝐏ᴏᴡᴇʀ 𝐁ʏ✿︎ -  @LeyoxYan_Yan!</b>\n\n"
+        "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>မင်းတို့ကြမ်းတာထုပ်ထားတယ်!</b>𝐏ᴏᴡᴇʀ 𝐁ʏ✿︎ -  @LeyoxYan_Yan\n\n"
         "<tg-emoji emoji-id='5240241223632954241'>🚫</tg-emoji> Bio / Join / Link spam auto delete\n"
         "<tg-emoji emoji-id='6271786398404055377'>⚠️</tg-emoji> 3 Warnings = Auto Mute\n\n"
         "<tg-emoji emoji-id='5226945370684140473'>➕</tg-emoji> Bot ကို Group ထဲထည့်ပြီး Admin ပေးထားပါ။<tg-emoji emoji-id='5226945370684140473'>➕</tg-emoji> ",
@@ -915,8 +915,7 @@ def handle_chat_creation(message):
 
 @bot.message_handler(content_types=["text", "photo", "sticker", "story", "video", "animation"])
 def handle_all(message):
-    # --- Time Check Section ---
-    if hasattr(message, 'date'):
+    # --- Time Check Section --မင်းတို့ကြမ်းတာထုပ်ထားတယ်𝐏ᴏᴡᴇʀတို့ကြမ်းတာထုပ်ထားတယ်𝐏ᴏᴡᴇʀ  if hasattr(message, 'date'):
         msg_ts = message.date
         if isinstance(msg_ts, datetime.datetime):
             msg_ts = int(msg_ts.timestamp())
