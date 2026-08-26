@@ -716,7 +716,6 @@ def start(message):
     bot.send_message(
         message.chat.id, 
         
-        
         "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>𝐏ᴏᴡᴇʀ 𝐁ʏ✿︎ -  @LeyoxYan_Yan!</b>\n\n"
         "<tg-emoji emoji-id='5240241223632954241'>🚫</tg-emoji> Bio / Join / Link spam auto delete\n"
         "<tg-emoji emoji-id='6271786398404055377'>⚠️</tg-emoji> 3 Warnings = Auto Mute\n\n"
