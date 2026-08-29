@@ -230,15 +230,15 @@ def main_buttons():
     kb.add(
          InlineKeyboardButton(
             "𝘼𝙙𝙙 𝙈𝙚 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=s&delete_message+manage_video_chats_message+invite_users")
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=s&delete_message+manage_video_chats_message+invite_users", icon_custom_emoji_id="6242217932277946089" )
           )
     kb.row(    
          InlineKeyboardButton(" 𝐎ᴡɴᴇʀ ", url=f"https://t.me/{OWNER_USER}" , icon_custom_emoji_id="6235572922086331108"),
-         InlineKeyboardButton(" 𝐒ᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{GROUP_NAME}")
+         InlineKeyboardButton(" 𝐒ᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{GROUP_NAME}", icon_custom_emoji_id="6208548360794677149")
           )
     kb.row(  
-        InlineKeyboardButton(" 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 ", url=f"tg://resolve?domain={OWNER_USER}&text=𝗖𝗿𝗲𝗮𝘁𝗼𝗿"),
-        InlineKeyboardButton(" 𝐔ᴘᴅᴀᴛᴇ ", url=f"https://t.me/{CHANNEL_NAME}")
+        InlineKeyboardButton(" 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 ", url=f"tg://resolve?domain={OWNER_USER}&text=𝗖𝗿𝗲𝗮𝘁𝗼𝗿", icon_custom_emoji_id="6208694634495876948"),
+        InlineKeyboardButton(" 𝐔ᴘᴅᴀᴛᴇ ", url=f"https://t.me/{CHANNEL_NAME}", icon_custom_emoji_id="6183677764256666403")
           )
     return kb
 # ======================
