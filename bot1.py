@@ -23,7 +23,9 @@ ADMIN_IDS = [int(i.strip()) for i in os.getenv("ADMIN_IDS").split(",")]
 DATA_FILE = os.getenv("DATA_FILE")
 FORCE_JOIN_CHANNEL = os.getenv("FORCE_JOIN_CHANNEL")
 MONGO_URI = os.getenv("MONGO_URI")
-
+OWNER_USER= os.getenv("OWNER_USER")
+GROUP_NAME= os.getenv("GROUP_NAME")
+CHANNEL_NAME= os.getenv("CHANNEL_NAME")
 bot = telebot.TeleBot(TOKEN, parse_mode="HTML")
 
 # ======================
@@ -230,12 +232,12 @@ def main_buttons():
             url=f"https://t.me/{BOT_USERNAME}?startgroup=s&delete_message+manage_video_chats_message+invite_users")
           )
     kb.row(    
-         InlineKeyboardButton("DEV", url="https://t.me/HANTHAR_1999"),
-         InlineKeyboardButton(" စကားပြော ", url="https://t.me/myanmar_music_Bot2027")
+         InlineKeyboardButton("DEV", url=f"https://t.me/{OWNER_USER}"),
+         InlineKeyboardButton(" စကားပြော ", url=f"https://t.me/{GROUP_NAME}")
           )
     kb.row(  
-        InlineKeyboardButton("Botပြုလုပ်လိုပါက", url="tg://resolve?domain=cores_999&text=Botအသစ်လုပ်ချင်လို့ပါ"),
-        InlineKeyboardButton("UPDATE", url="https://t.me/myanmarbot_music")
+        InlineKeyboardButton("Botပြုလုပ်လိုပါက", url=f"tg://resolve?domain={OWNER_USER}&text=Botအသစ်လုပ်ချင်လို့ပါ"),
+        InlineKeyboardButton("UPDATE", url=f"https://t.me/{CHANNEL_NAME}")
           )
     return kb
 # ======================
@@ -715,10 +717,10 @@ def start(message):
     # ၃။ Join ထားပြီးသူများအတွက် ပြသမည့် စာသား
     bot.send_message(
         message.chat.id, 
-        "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>𝙼𝚢𝚊𝚗𝚖𝚊𝚛 𝙵𝚛𝚒𝚎𝚗𝚍 Bot Online!</b>\n\n"
-        "<tg-emoji emoji-id='5240241223632954241'>🚫</tg-emoji> Bio / Join / Link spam auto delete\n"
-        "<tg-emoji emoji-id='6271786398404055377'>⚠️</tg-emoji> 3 Warnings = Auto Mute\n\n"
-        "<tg-emoji emoji-id='5226945370684140473'>➕</tg-emoji> Bot ကို Group ထဲထည့်ပြီး Admin ပေးထားပါ။<tg-emoji emoji-id='5226945370684140473'>➕</tg-emoji> ",
+        "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩</b>\n\n"
+        "<tg-emoji emoji-id='5240241223632954241'>🚫</tg-emoji> 𝟐𝟒/𝟕 𝐀𝐮𝐭𝐨 𝐑𝐞𝐩𝐥𝐢𝐞𝐬 •\n"
+        "<tg-emoji emoji-id='6271786398404055377'>⚠️</tg-emoji> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐘𝐚𝐧 𝐘𝐚𝐧\n\n"
+        "<tg-emoji emoji-id='5226945370684140473'>➕</tg-emoji> 𝐈’𝐦 𝐚𝐥𝐰𝐚𝐲𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐫𝐞𝐩𝐥𝐲 𝐚𝐧𝐝 𝐤𝐞𝐞𝐩 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐚𝐜𝐭𝐢𝐯𝐞 𝐚𝐧𝐲𝐭𝐢𝐦𝐞, 𝐝𝐚𝐲 𝐨𝐫 𝐧𝐢𝐠𝐡𝐭. 𝐌𝐚𝐤𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐦𝐨𝐫𝐞 𝐟𝐮𝐧, 𝐥𝐢𝐯𝐞𝐥𝐲, 𝐚𝐧𝐝 𝐢𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐢𝐯𝐞 𝐰𝐢𝐭𝐡 𝐞𝐱𝐜𝐢𝐭𝐢𝐧𝐠 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐟𝐫𝐢𝐞𝐧𝐝𝐥𝐲 𝐜𝐨𝐧𝐯𝐞𝐫𝐬𝐚𝐭𝐢𝐨𝐧𝐬.\n\n 𝐅𝐚𝐬𝐭 • 𝐅𝐮𝐧 • 𝐒𝐦𝐚𝐫𝐭 • 𝟐𝟒/𝟕 \n 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐚𝐧𝐝 𝐠𝐢𝐯𝐞 𝐦𝐞 𝐭𝐡𝐞 𝐧𝐞𝐜𝐞𝐬𝐬𝐚𝐫𝐲 𝐀𝐝𝐦𝐢𝐧 𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧𝐬. ",
         reply_markup=main_buttons()
     )
             
@@ -976,7 +978,7 @@ def handle_all(message):
             join_kb = InlineKeyboardMarkup()
             clean_channel = FORCE_JOIN_CHANNEL.replace('@', '')
             join_kb.add(InlineKeyboardButton(" Channel join", url=f"https://t.me/{clean_channel}"))
-            join_kb.add(InlineKeyboardButton(" Join (စစ်ဆေးမည်)", url=f"https://t.me/MYANMAR_FRIEND_BOT?start=start"))
+            join_kb.add(InlineKeyboardButton(" Join (စစ်ဆေးမည်)", url=f"https://t.me/{BOT_USERNAME}?start=start"))
             return bot.send_message(
                 message.chat.id,
                 "<tg-emoji emoji-id='6257780484281997093'>❌</tg-emoji> <b>အသုံးပြုခွင့်မရှိသေးပါ!</b>\n\nဒီ Bot ကို သုံးဖို့အတွက် Group ကို အရင် Join ပေးရပါမယ်။",
