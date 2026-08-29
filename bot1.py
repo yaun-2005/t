@@ -228,16 +228,16 @@ def main_buttons():
     kb = InlineKeyboardMarkup()
     kb.add(
          InlineKeyboardButton(
-            "➕Add To Your Group ထည့်သွင်းရန်",
+            "𝘼𝙙𝙙 𝙈𝙚 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=s&delete_message+manage_video_chats_message+invite_users")
           )
     kb.row(    
-         InlineKeyboardButton("DEV", url=f"https://t.me/{OWNER_USER}"),
-         InlineKeyboardButton(" စကားပြော ", url=f"https://t.me/{GROUP_NAME}")
+         InlineKeyboardButton(" 𝐎ᴡɴᴇʀ ", url=f"https://t.me/{OWNER_USER}"),
+         InlineKeyboardButton(" 𝐒ᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{GROUP_NAME}")
           )
     kb.row(  
-        InlineKeyboardButton("Botပြုလုပ်လိုပါက", url=f"tg://resolve?domain={OWNER_USER}&text=Botအသစ်လုပ်ချင်လို့ပါ"),
-        InlineKeyboardButton("UPDATE", url=f"https://t.me/{CHANNEL_NAME}")
+        InlineKeyboardButton(" 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 ", url=f"tg://resolve?domain={OWNER_USER}&text=𝗖𝗿𝗲𝗮𝘁𝗼𝗿"),
+        InlineKeyboardButton(" 𝐔ᴘᴅᴀᴛᴇ ", url=f"https://t.me/{CHANNEL_NAME}")
           )
     return kb
 # ======================
