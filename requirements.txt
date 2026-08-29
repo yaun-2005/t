@@ -3,5 +3,5 @@ pymongo[srv]
 python-dotenv
 certifi
 dnspython
-pyrogram
+kurigram
 tgcrypto
