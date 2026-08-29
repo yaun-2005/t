@@ -8,7 +8,7 @@ import os
 import pymongo  
 import random
 import html
-from pyrogram.enums import ButtonStyle
+from kurigram.enums import ButtonStyle
 from telebot.types import ChatPermissions, InlineKeyboardMarkup, InlineKeyboardButton
 from dotenv import load_dotenv 
 
