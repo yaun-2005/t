@@ -232,7 +232,7 @@ def main_buttons():
             url=f"https://t.me/{BOT_USERNAME}?startgroup=s&delete_message+manage_video_chats_message+invite_users")
           )
     kb.row(    
-         InlineKeyboardButton(" 𝐎ᴡɴᴇʀ ", url=f"https://t.me/{OWNER_USER}"),
+         InlineKeyboardButton(" 𝐎ᴡɴᴇʀ ", url=f"https://t.me/{OWNER_USER}", style=ButtonStyle.DANGER , icon_custom_emoji_id="6235572922086331108"),
          InlineKeyboardButton(" 𝐒ᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{GROUP_NAME}")
           )
     kb.row(  
