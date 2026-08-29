@@ -1,5 +1,7 @@
+pyTelegramBotAPI
 pymongo[srv]
 python-dotenv
-pyTelegramBotAPI
 certifi
 dnspython
+pyrogram
+tgcrypto
