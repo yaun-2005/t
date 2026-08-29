@@ -227,7 +227,7 @@ def main_buttons():
     kb.add(
          InlineKeyboardButton(
             "➕Add To Your Group ထည့်သွင်းရန်",
-            url=f"https://t.me/PokeiLayBot?startgroup=s&delete_message+manage_video_chats_message+invite_users")
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=s&delete_message+manage_video_chats_message+invite_users")
           )
     kb.row(    
          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="http://t.me/LeyoxYan_Yan"),
