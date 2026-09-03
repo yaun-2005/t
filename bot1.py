@@ -441,7 +441,7 @@ def list_brain(message):
             results = []
 
         if results:
-            safe_sticker = html.escape(sticker_id)
+            #safe_sticker = html.escape(sticker_id)
             msg = f"<b>🎯 Sticker ID:</b>\n<code>{safe_sticker}</code>\n\n<b>ဒီ sticker မှတ်ထားတွေ:</b>\n"
             for doc in results:
                 rowid = str(doc["_id"])
